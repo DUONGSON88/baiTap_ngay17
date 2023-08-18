@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyenTap1_5</title>
+</head>
+<body>
+<script>
+    let nameStar = ["Polaris", "ALdebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let nameConstellation = ["Ursa Minor", "Tarurus", "Cygrus", "Lyra", "Aquila", "Urs a Major", "Leo"];
+
+    function searchStar(str) {
+        let vitri = nameStar.indexOf(str)
+        if (vitri === -1) {
+            return "Hãy nhập lại chính xác tên chóm sao bạn tìm"
+        }else {
+            let kq= nameConstellation[vitri];
+            return kq;
+        }
+
+    }
+    let string=prompt("Hãy nhập tên ngôi sao :")
+    let ketuqa=searchStar(string);
+    alert(ketuqa)
+
+    //     for (let i = 0; i < nameStar.length; i++) {
+    //         let input = prompt("Hãy nhập tên ngôi sao của ban")
+    //         if (input === nameStar) {
+    //             for (let j = 0; j < nameConstellation.length; j++) {
+    //                 if (i===j){
+    //                     return alert(`Chòm sao là ${j}`);
+    //                 }
+    //             }
+    //             }else{
+    //             alert("Bạn Đã nhập sai tên ngôi sao.Vui lòng nhập lại chính xác!")
+    //         }
+    //
+    //     }
+    // }
+    //
+    // searchStar(input)
+</script>
+
+</body>
+</html>

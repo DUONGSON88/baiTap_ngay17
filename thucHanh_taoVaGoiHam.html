@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>taoVaGoiHam</title>
+</head>
+<body>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            result = "Xuất sắc.Bạn đẫ chơi tốt trò chơi này.";
+        } else {
+            result = "Có lẽ bạn cần thêm  thời  gian!";
+        }
+        return result;
+    }
+
+    let confirmAnswer = confirm("Bạn có muốn chơi game này ?");
+    let theAnswer = processConfirm(confirmAnswer);
+    alert(theAnswer);
+
+</script>
+</body>
+</html>

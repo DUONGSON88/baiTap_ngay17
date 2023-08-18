@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyenDoi</title>
+</head>
+<body>
+<h1>Chuyển đổi giữa Feet và Meters</h1>
+<p>
+    <label>Feet</label>
+    <input type="number" id="nhapF"
+           oninput="footToMeter(this.value)"
+           onchange="footToMeter(this.value)">
+</p>
+<p>Meters: <span id="outputMet"> </span></p>
+<hr>
+<p>
+    <label>Meters</label>
+    <input type="number" id="nhapM"
+           oninput="meterToFoot(this.value)"
+           onchange="meterToFoot(this.value)">
+</p>
+<p>Feet: <span id="outputFeet"> </span></p>
+<script>
+    function footToMeter(x) {
+        x = parseFloat(x);
+        document.getElementById("outputMet").innerHTML = 0.305 * x + " (meter)"
+    }
+
+    function meterToFoot(x) {
+        x = parseFloat(x);
+        document.getElementById("outputFeet").innerHTML = 3.279 * x + "  (foot) "
+    }
+</script>
+</body>
+</html>
